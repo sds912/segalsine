@@ -1,0 +1,9 @@
+<div class="container mt-5">
+  <h2 class="text-center">Nos Services de Consultance</h2>
+  <p class="text-muted text-center mb-5">Faites-vous accompanger par les meilleurs</p>
+  <div class="row">
+    <div *ngFor="let s of services" class="col-12 col-md-4">
+      <app-service-card [service]="s"></app-service-card>
+    </div>
+  </div>
+</div>

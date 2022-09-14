@@ -1,0 +1,28 @@
+.card{
+  position: relative;
+  padding: 2px;
+  .btn-share{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    right: 3px;
+    top: 240px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  }
+
+}
+.btn-more{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.card-title{
+  font-size: 22px;
+  font-weight: 700;
+}
+.card-text{
+  font-size: 16px;
+  color: #696969;
+}

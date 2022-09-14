@@ -1,0 +1,32 @@
+.container-fluid{
+  width: 100%;
+  min-height: 90vh;
+  background: #FFFFFF;
+  padding: 4em 5em;
+}
+h2{
+  font-size: 26px;
+}
+.header-desc{
+  font-size: 18px;
+  line-height: 32px;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #036a7c;
+}
+
+button{
+  border: none;
+  background-color: #036a7c;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 25px;
+  transition: background-color .7s;
+}
