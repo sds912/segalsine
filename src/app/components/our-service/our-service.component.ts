@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OurServiceComponent implements OnInit {
 
+  data: any = {
+    sect1: "Consultance  en stratégies de Marketing, Communication et Vente  L’équipe dirigeante dispose de près de 25 années d’expérience dans",
+    sect2: "- l’élaboration de stratégies gagnantes dans les domaines du Marketing, de la communication, de la vente B2C et B2B  ainsi que de la distribution ",
+    sect3: "- l’accompagnement /  la supervision de bout en bout  dans leurs implémentations effectives et réussies",
+    sect4: "Nos domaines de prédilection :  Les produits alimentaires de grande consommation,  les produits et solutions télécoms,  les produits immobiliers, solutions  e gouvernements."
+  }
+
   services: any[] = [
     {
       title: "Marketing",

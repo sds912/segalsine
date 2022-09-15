@@ -19,6 +19,9 @@ import { OnlineStatusModule } from 'ngx-online-status';
 import { ServiceCardComponent } from './components/service-card/service-card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AgroBusinessComponent } from './components/agro-business/agro-business.component';
+import { CarrouselComponent } from './components/carrousel/carrousel.component';
+import { TeamComponent } from './components/team/team.component';
+import { NewsComponent } from './components/news/news.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { AgroBusinessComponent } from './components/agro-business/agro-business.
     ContactComponent,
     LoaderComponent,
     ServiceCardComponent,
-    AgroBusinessComponent
+    AgroBusinessComponent,
+    CarrouselComponent,
+    TeamComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +48,7 @@ import { AgroBusinessComponent } from './components/agro-business/agro-business.
     OnlineStatusModule,
     FormsModule,
     ReactiveFormsModule
+
 
   ],
   providers: [

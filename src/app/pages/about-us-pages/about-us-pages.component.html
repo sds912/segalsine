@@ -1,1 +1,29 @@
-<p>about-us-pages works!</p>
+<div class="container mt-5" id="about">
+  <h1 class="ttile">Qui Sommes-Nous ?</h1>
+
+  <div class="row mt-5">
+     <div *ngFor="let d of data"  class="col-12 col-md-12 p-5 m-0 cover" [ngStyle]="{'background-color': d.color}">
+      <h3 style="font-size: 22px; font-weight:700" class="text-center text-white">{{d.title}}</h3>
+      <div class="mt-5">
+        <ul class="list-unstyled">
+          <li *ngFor="let i of d.items">
+            <div class="row mt-3">
+              <div class="col-12 col-md-5">
+                <img src="{{i.img}}" class="img-fluid" style="height: 220px; min-width: 100%"/>
+              </div>
+              <div class="col-12 col-md-7">
+                <p class="text text-muted" style="font-weight: 500; line-height: 32px">{{i.text}}</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+     </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+
+    </div>
+  </div>
+
+</div>
