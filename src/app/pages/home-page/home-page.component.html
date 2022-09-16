@@ -3,7 +3,7 @@
   <app-carrousel></app-carrousel>
   <div class="container-fluid mt-5">
 
-  <h2 class="text-center mt-5 title" id="service">Nos Services</h2>
+  <h2 class="text-center mt-5 title" id="service">{{ lang.lang == 'FR' ? 'Nos Services': 'Our Services'}}</h2>
     <app-agro-business></app-agro-business>
     <app-our-service></app-our-service>
     <app-about-us-pages></app-about-us-pages>
@@ -13,3 +13,5 @@
 
   <app-footer></app-footer>
 </div>
+<app-loader></app-loader>
+

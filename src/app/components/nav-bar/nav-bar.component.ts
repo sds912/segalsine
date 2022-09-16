@@ -1,6 +1,7 @@
 import { AppLanguageService } from './../../services/app-language.service';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { LoaderService } from 'src/app/services/loader.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -9,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavBarComponent implements OnInit {
 
-  siteLanguage = 'FR';
+  siteLanguage = localStorage.getItem('selgalsineLang') != undefined ? localStorage.getItem('selgalsineLang') : "FR";
 
   languages = [
     {
@@ -64,7 +65,7 @@ export class NavBarComponent implements OnInit {
       link: ""
     },
     {
-      title: "Contac us",
+      title: "Contact us",
       link: "#contact"
     }
   ]
@@ -72,15 +73,17 @@ export class NavBarComponent implements OnInit {
 
 
 
-  constructor(private lang: AppLanguageService) { }
+  constructor(private lang: AppLanguageService, private loader: LoaderService) { }
 
   ngOnInit(): void {
-    console.log(this.lang.langChange.subscribe(r => console.log(r)))
+
   }
 
   onToggle(name: string){
     this.siteLanguage = name;
-    this.lang.toggleLang(name)
+    this.lang.toggleLang(name);
+    this.loader.show()
+
   }
 
 

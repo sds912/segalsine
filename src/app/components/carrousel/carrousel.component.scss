@@ -4,9 +4,16 @@
 
 
 .carousel-item {
- margin-left: 10%;
+// margin-left: 10%;
 }
 
 img{
   width: 100% !important;
+}
+.carousel-control-prev{
+  background-color: rgb(3, 127, 141) !important;
+}
+
+.carousel-control-next{
+  background-color: rgb(3, 127, 141) !important;
 }

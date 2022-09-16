@@ -1,6 +1,5 @@
+import { AppLanguageService } from './../../services/app-language.service';
 import { Component, OnInit } from '@angular/core';
-import { TitleStrategy } from '@angular/router';
-import { OnlineStatusService, OnlineStatusType } from 'ngx-online-status';
 
 @Component({
   selector: 'app-home-page',
@@ -8,9 +7,8 @@ import { OnlineStatusService, OnlineStatusType } from 'ngx-online-status';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  onlineStatusCheck: any = OnlineStatusType;
 
-  constructor(private onlineStatusService: OnlineStatusService){
+  constructor(public lang: AppLanguageService){
 
   }
 

@@ -8,6 +8,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgroBusinessComponent implements OnInit {
 
+  carouselImages: any [] = [
+    {
+      label:"image",
+      url: "assets/exportb.png"
+    },
+    {
+      label:"Image",
+      url: "assets/v1.jpg"
+    },
+    {
+      label:"Image",
+      url: "assets/v2.jpeg"
+    },
+    {
+      label:"Image",
+      url: "assets/v3.jpg"
+    },
+    {
+      label:"Image",
+      url: "assets/v3.jpg"
+    },
+    {
+      label:"Honey",
+      url: "assets/honey.jpg"
+    },
+    {
+      label:"Oil",
+      url: "assets/oil.jpg"
+    }
+  ]
+
 
  intro = "Nous capitalisons maintenant  7 ans dans le  domaine  de l’ Agrobusiness.  A l’image de  la Terre qui ne ment pas , nous nous évertuons toujours à valoriser  nos services  de la façon la plus professionnelle, éthique  et diligente qui soit."
  introEn ="We capitalize now 7 years in the field of the Agrobusiness.  Like the Earth that does not lie, we always strive to value our services in the most professional, ethical and diligent way."
@@ -24,7 +55,7 @@ export class AgroBusinessComponent implements OnInit {
     },
     {
       title: "Notre prochain challenge :",
-      img: "assets/challenge.jpg",
+      img: "assets/v2.jpeg",
       desc: "Nous comptons  transformer ce magnifique et délicieux  fruit que nous avons en abondance,  en des produits exceptionnels  que le monde entier   voudra acquérir . Nous recherchons des investisseurs qui  au-delà de leur sens des affaires,  ont aussi une grande ambition pour les femmes et les jeunes désireux  de travailler pour  faire avancer l’ Afrique."
     }
   ]
@@ -42,7 +73,7 @@ export class AgroBusinessComponent implements OnInit {
     },
     {
       title: "Our next challenge:",
-      img: "assets/challenge.jpg",
+      img: "assets/v2.jpeg",
       desc: "We intend to transform this beautiful and delicious fruit that we have in abundance, into exceptional products that the whole world will want to acquire. We are looking for investors who beyond their business sense, also have a great ambition for women and young people willing to work to advance Africa."
     }
   ]
