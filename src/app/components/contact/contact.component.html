@@ -1,6 +1,6 @@
 <div class="container-fluid mt-5 mx-0 px-5" id="contact">
-  <h3>Nous contacter</h3>
-  <p class="text-muted mb-4">Un premier  contact peut tout changer </p>
+  <h1 class="title">{{ lang.lang == 'FR'?'Nous contacter': 'Contact us'}}</h1>
+  <p class="text-muted mb-4">{{lang.lang == 'FR'?'Un premier  contact peut tout changer': 'A first contact can change everything  '}} </p>
  <div class="row">
    <div class="col-12 col-md-7 banner" style="position: relative;">
     <ul class="list-unstyled text-white" style="position: absolute; bottom: 0;">
@@ -12,7 +12,7 @@
    </div>
    <div class="col-12 col-md-5 px-4">
     <p class="contact-us-desc mb-4">
-      Pour toute question ou requête contactez nous : nous  vous répondons sous 6 heures au plus tard. </p>
+      {{ lang.lang == 'FR'?'Pour toute question ou requête contactez nous : nous  vous répondons sous 6 heures au plus tard.': 'For any question or request contact us: we will answer you within 6 hours.'}} </p>
      <form [formGroup]="contactForm" (submit)="onSubmit()" >
        <div class="form-group">
         <label>Nom et Prénom</label>

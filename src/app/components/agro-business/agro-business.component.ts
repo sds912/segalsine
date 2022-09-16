@@ -1,3 +1,4 @@
+import { AppLanguageService } from './../../services/app-language.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgroBusinessComponent implements OnInit {
 
+
+ intro = "Nous capitalisons maintenant  7 ans dans le  domaine  de l’ Agrobusiness.  A l’image de  la Terre qui ne ment pas , nous nous évertuons toujours à valoriser  nos services  de la façon la plus professionnelle, éthique  et diligente qui soit."
+ introEn ="We capitalize now 7 years in the field of the Agrobusiness.  Like the Earth that does not lie, we always strive to value our services in the most professional, ethical and diligent way."
   agro: any[] = [
     {
       title: "Exportateurs    de fruits,   légumes ,   miel et huile d’arachide :",
@@ -25,7 +29,28 @@ export class AgroBusinessComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+  agroEn: any[] = [
+    {
+      title: "Exporters of fruits, vegetables, honey and peanut oil: ",
+      img: "assets/exportb.png",
+      desc: "Segalsine exports mainly mangoes, chilli, raw peanut oil and pure honey of excellent quality from our vast forests. In direct contact with the cooperatives, we strive to offer you the best quality products, at the best prices, and above all respecting your deadlines and procedures. Trying us, is for the most part, to adopt us."
+    },
+    {
+      title: "Exclusive Representative of the Mixoil Brand : ",
+      img: "assets/mixoil.jpg",
+      desc: "Segalsine is the exclusive representative in Senegal, Mali and Gambia, of the Italian brand Mixoil, food additive certified Bio, which helps in a notable and fast way to the profitability of the breeding of all kinds, and also to the production of meat without antibiotics. Our activity is not limited to sales: we visit our customers and give them advice and support through our Mixoil veterinarians around the world; Thanks to Mixoil, many young people have become more confident in poultry farming and are blossoming, finding an activity that they are passionate about, that brings them a safe income and that increases creshendo, thus keeping them away from unemployment and immigration. "
+    },
+    {
+      title: "Our next challenge:",
+      img: "assets/challenge.jpg",
+      desc: "We intend to transform this beautiful and delicious fruit that we have in abundance, into exceptional products that the whole world will want to acquire. We are looking for investors who beyond their business sense, also have a great ambition for women and young people willing to work to advance Africa."
+    }
+  ]
+
+
+
+
+  constructor(public lang: AppLanguageService) { }
 
   ngOnInit(): void {
   }

@@ -1,12 +1,12 @@
 <div class="container mt-5" >
   <div class="mt-3">
-    <h3>{{data.sect1}}</h3>
+    <h3>{{lang.lang == 'FR' ? data.sect1: dataEn.sect1}}</h3>
   </div>
   <ul class="list-unstyled my-3">
-    <li>{{data.sect2}}</li>
-    <li>{{data.sect3}}</li>
+    <li>{{lang.lang == 'FR' ? data.sect2: dataEn.sect2}}</li>
+    <li>{{lang.lang == 'FR' ? data.sect3: dataEn.sect3}}</li>
   </ul>
-  <p>{{data.sect4}}</p>
+  <p>{{lang.lang == 'FR' ? data.sect4: dataEn.sect4}}</p>
   <div class="row">
     <div *ngFor="let s of services" class="col-12 col-md-4">
       <app-service-card [service]="s"></app-service-card>

@@ -1,3 +1,4 @@
+import { AppLanguageService } from './../../services/app-language.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -8,8 +9,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
+
+
+
   contactForm!: FormGroup;
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder,public lang: AppLanguageService) { }
 
   ngOnInit(): void {
     this.contactForm = this.formBuilder.group({

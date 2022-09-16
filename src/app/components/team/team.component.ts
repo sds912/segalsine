@@ -1,3 +1,4 @@
+import { AppLanguageService } from './../../services/app-language.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -16,7 +17,14 @@ export class TeamComponent implements OnInit {
     sect3: "- Une équipe 100 % Trilingue : Nous parlons tous anglais,  français et wolof . La langue que vous choisissez parmi ces 3,  pour nous contacter  devient  la notre ."
   }
 
-  constructor() { }
+  dataEn: any = {
+    sect1: "- The passion and the desire of ''frank success'' which underlies each mission that our customers entrust to us.",
+    sect2: "- The great diversity of our freelance experts: our freelance experts come from various horizons: Africa, India, China, Europe, North Africa; our partnerships have started for the most part since 2007, well before the creation of Segalsine. They are photographers, art directors, IT engineers, agronomists, trouble shooters, freight forwarders, laboratory technicians, certified experts...",
+    sect3: "- A 100% trilingual team: We all speak English, French and Wolof. The language you choose among these 3, to contact us becomes ours."
+  }
+
+
+  constructor(public lang: AppLanguageService) { }
 
   ngOnInit(): void {
   }

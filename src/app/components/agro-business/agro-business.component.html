@@ -1,12 +1,32 @@
 <div class="container-fluid mx-0 bg-white my-5 p-5" >
       <h2>Agro Business</h2>
       <p class="desc my-4">
-        Nous capitalisons maintenant  7 ans dans le  domaine  de l’ Agrobusiness.  A l’image de  la Terre qui ne ment pas , nous nous évertuons toujours à valoriser  nos services  de la façon la plus professionnelle, éthique  et diligente qui soit.
+        {{lang.lang == "FR" ? intro: introEn}}
       </p>
       <div  class="mt-5">
-        <div *ngFor="let a of agro" class="row mt-3">
+        <div *ngFor="let a of lang.lang == 'FR' ? agro: agroEn" class="row mt-3">
           <div class="col-12 col-md-3">
-            <img src={{a.img}} alt="" class="img-fluid" />
+            <img *ngIf="a.img !='assets/exportb.png'" src={{a.img}} alt="" class="img-fluid" />
+            <div *ngIf="a.img=='assets/exportb.png'"  class="carousel slide "  data-ride="carousel">
+              <div class="carousel-inner ">
+                <div class="carousel-item active">
+                  <img src="assets/exportb.png" class="d-block  img-fluid" alt="..." style="height: 220px; min-width: 100%" >
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/v1.jpg" class="d-block img-fluid" alt="..." style="height: 220px; min-width: 100%" >
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/v2.jpeg" class="d-block img-fluid" alt="..." style="height: 220px; min-width: 100%" >
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/v3.jpg" class="d-block  img-fluid" alt="..." style="height: 220px; min-width: 100%" >
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/v3.jpg" class="d-block  img-fluid" alt="..." style="height: 220px; min-width: 100%" >
+                </div>
+
+              </div>
+            </div>
           </div>
           <div class="col-12 col-md-9">
             <h3 class="title">{{a.title}}</h3>

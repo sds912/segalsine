@@ -22,6 +22,7 @@ import { AgroBusinessComponent } from './components/agro-business/agro-business.
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { TeamComponent } from './components/team/team.component';
 import { NewsComponent } from './components/news/news.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,13 @@ import { NewsComponent } from './components/news/news.component';
     MatProgressSpinnerModule,
     OnlineStatusModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslateModule.forRoot(
+      {
+        defaultLanguage: "fr"
+      }
+    )
+
 
 
   ],
